@@ -1,0 +1,42 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: cyan;
+}
+
+body {
+    background-image: url("/Media/bg3.jfif");
+    background-size: cover;
+    /* background-size: 1300px 620px; */
+    
+    background-repeat: no-repeat;
+}
+
+#newPost {
+    position: relative;
+    right: -970px;
+    border: white solid 1px;
+    font-weight: bold;
+    color: white;
+}
+
+#newPost:hover{
+     color: aqua;
+}
