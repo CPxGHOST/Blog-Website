@@ -7,20 +7,20 @@
     },
     {
         "id": 2,
-        "title": "Blog 1",
-        "Content": "This is blog 1",
+        "title": "Blog 2",
+        "Content": "This is blog 2",
         "Category": "Technology"
     },
     {
         "id": 3,
-        "title": "Blog 1",
-        "Content": "This is blog 1",
+        "title": "Blog 3",
+        "Content": "This is blog 3",
         "Category": "Technology"
     },
     {
         "id": 4,
-        "title": "Blog 1",
-        "Content": "This is blog 1",
+        "title": "Blog 4",
+        "Content": "This is blog 4",
         "Category": "Technology"
     }
 ]
