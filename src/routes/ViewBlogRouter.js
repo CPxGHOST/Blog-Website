@@ -4,7 +4,7 @@ const blogs = require('../data/data.json');
 
 viewBlogRouter.route('/:id').get((req, res) => {
     let id = req.params.id;
-    res.render('ViewBlog', { blog: blogs[id] });
+    res.render('ViewBlog', { blog: blogs[id] , indexId : id});
 });
 
 module.exports = viewBlogRouter;
