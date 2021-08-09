@@ -3,15 +3,17 @@ const path = require('path');
 const app = express();
 const addBlogRouter = require('./src/routes/AddBlogRouter');
 const viewBlogRouter = require('./src/routes/ViewBlogRouter');
-const adminRouter = require('./src/routes/adminRouter')
+const adminRouter = require('./src/routes/adminRouter');
+const editBlogRouter = require('./src/routes/EditBlogRouter');
 const allBlog = require('./src/data/data.json');
 
 app.use('/AddBlog', addBlogRouter);
 app.use('/ViewBlog', viewBlogRouter);
+app.use('/EditBlog', editBlogRouter);
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
-app.use('/admin', adminRouter)
+app.use('/admin', adminRouter);
 
 
 app.get('/', (req, res) => {
