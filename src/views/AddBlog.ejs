@@ -16,19 +16,18 @@
         <a href="/">Back to Index</a>
     </div>
     <div class="main-section-container">
-        <section class="form-container">
+        <form class="form-container" method="POST" action="/AddBlog">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Title:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="title">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Category :</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="category">
             </div>
-            <div class="mb-3">
+            <div class="mb-3"> 
                 <label for="exampleFormControlTextarea1" class="form-label">Content :</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="content"></textarea>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Submit" class="btn btn-primary">
