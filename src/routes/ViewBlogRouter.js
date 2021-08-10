@@ -10,7 +10,7 @@ viewBlogRouter.route('/:id').get((req, res) => {
         })
         .catch((err) => {
             console.log(err);
-        });
+        }); 
 });
 
 viewBlogRouter.route('/:id').delete((req, res) => {
