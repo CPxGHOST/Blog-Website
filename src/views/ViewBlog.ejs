@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/deleteBlog.js"></script>
     <link rel="stylesheet" href="/css/ViewBlog.css">
     <title>Document</title>
 </head>
@@ -18,14 +20,14 @@
     <div class="topnav">
         <a href="/">Blog-Website</a>
         <a id="edit-post" href="/EditBlog/<%=indexId%>">Edit Post</a>
-        <a id="delete-post" href="/DeleteBlog">Delete Post</a>
+        <a id="delete-post" data-someValue = '<%=indexId%>' onclick="onDeleteClick(`<%=indexId%>`)">Delete Post</a>
     </div>
     <section class="blog">
         <h1>
             <%=blog.title%>
         </h1>
         <p class="text-mid">
-            <%=blog.Content%>
+            <%=blog.content%>
         </p>
 
         <a href="/" class="btn btn-danger">All Blogs</a>
