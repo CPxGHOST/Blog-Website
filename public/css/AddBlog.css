@@ -23,7 +23,10 @@
 
 body {
     background-image: url("/Media/bg3.jfif");
-    background-size: 1300px 620px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 .main-section-container{
     width: 50%;

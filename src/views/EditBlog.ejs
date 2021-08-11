@@ -19,25 +19,28 @@
         <a href="/">Back to Index</a>
     </div>
     <div class="main-section-container">
-        <section class="form-container">
+        <form class="form-container" method="POST">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Title:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" value="<%=blog.title%>">
+                <input type="text" class="form-control" id="exampleFormControlInput1" value="<%=blog.title%>"
+                    name="title" required>
 
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Category :</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" value="<%=blog.Category%>">
+                <input type="text" class="form-control" id="exampleFormControlInput1" value="<%=blog.category%>"
+                    name="category" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Content :</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"><%=blog.Content%></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="content"
+                    required><%=blog.content%></textarea>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Save Changes" class="btn btn-primary">
                 <a href="/" class="btn btn-danger">Cancel</a>
             </div>
-        </section>
+            </section>
     </div>
 </body>
 

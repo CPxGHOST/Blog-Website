@@ -24,16 +24,16 @@
         <%blogs.forEach((blog , index)=> { %>
             <div class="card">
                 <h5 class="card-header">
-                    <%=blog.Category%>
+                    <%=blog.category%>
                 </h5>
                 <div class="card-body">
                     <h5 class="card-title">
                         <%=blog.title%>
                     </h5>
                     <p class="card-text">
-                        <%=blog.Content%>
+                        <%=blog.content%>
                     </p>
-                    <a href="/ViewBlog/<%=index%>" class="btn btn-primary">Read More</a>
+                    <a href="/ViewBlog/<%=blog._id%>" class="btn btn-primary">Read More</a>
                 </div>
             </div>
             <%}) %>
