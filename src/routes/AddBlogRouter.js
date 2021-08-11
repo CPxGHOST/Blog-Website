@@ -3,7 +3,6 @@ const addBlogRouter = express.Router();
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const path = require('path');
-const data = require('../data/dummyData.json');
 const Blog = require('../../models/blog');
 
 

@@ -9,9 +9,10 @@ const Blog = require('./models/blog');
 const app = express();
 
 const dbURI = 'mongodb+srv://mridul:qwertyuiop1234567890@todo.4zjnj.mongodb.net/blogs-database?retryWrites=true&w=majority';
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(2678, () => {
-        console.log('server started at http://localhost:2678')
+        console.log('server started at http://localhost:2678');
     }))
     .catch((err) => console.log(err));
 
